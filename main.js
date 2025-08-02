@@ -57,9 +57,21 @@ console.log(paroleFormattate);
 //Ogni animale ha un nome, una famiglia e una classe.
 //Crea un nuovo array con la lista dei mammiferi
 
+const animali = [
+      { nome: 'Leone', famiglia: 'Felidi', classe: 'Mammiferi' },
+      { nome: 'Aquila', famiglia: 'Accipitridi', classe: 'Uccelli' },
+      { nome: 'Squalo', famiglia: 'Selaci', classe: 'Pesci' },
+      { nome: 'Cane', famiglia: 'Canidi', classe: 'Mammiferi' },
+      { nome: 'Gatto', famiglia: 'Felidi', classe: 'Mammiferi' },
+      { nome: 'Serpente', famiglia: 'Colubridi', classe: 'Rettili' },
+]
+const mammiferi = animali.filter(animale => animale.classe === 'mammiferi');
+console.log(mammiferi);
+
 
 //Snack 4
 //Crea un array di oggetti che rappresentano delle persone.
 //Ogni persona ha un nome, un cognome e un’età.
 
-//Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e l’indicazione se può guidare, in base all’età.
+//Crea quindi un nuovo array inserendo, per ogni persona,
+// una frase con il nome e cognome e l’indicazione se può guidare, in base all’età.
